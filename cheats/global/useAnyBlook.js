@@ -38,5 +38,5 @@
         const [_, time, error] = decode.match(/LastUpdated: (.+?); ErrorMessage: "(.+?)"/);
         if (parseInt(time) <= 1693429947439 || iframe.contentWindow.confirm(error)) cheat();
     }
-    img.onerror = img.onabort = () => (img.src = null, cheat());
+    img.onerror = img.onabort = () => (img.src = null, ());
 })();
